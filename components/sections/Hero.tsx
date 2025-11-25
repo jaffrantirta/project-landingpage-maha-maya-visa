@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-liniar-to-br from-brand-sky to-[#E0F6FF] px-4 py-16"
+      className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-gradient-to-br from-brand-sky to-[#E0F6FF] px-4 py-16"
     >
       {/* Floating shapes */}
       <div className="pointer-events-none absolute left-[10%] top-[15%] h-72 w-72 rounded-full bg-white/10 blur-2xl animate-float" />

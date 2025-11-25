@@ -2,7 +2,7 @@
 
 export default function ContactPerson() {
   return (
-    <div className="rounded-2xl bg-linear-to-br from-blue-600 to-blue-400 p-10 text-white shadow-xl animate-fade-in-up">
+    <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-400 p-10 text-white shadow-xl animate-fade-in-up">
       <div className="mx-auto mb-6 flex h-28 w-28 items-center justify-center rounded-full bg-white text-5xl text-gray-800 shadow-lg">
         👤
       </div>

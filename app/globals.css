@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* :root {
+:root {
   --background: #ffffff;
   --foreground: #171717;
-} */
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -20,8 +20,6 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,3 +32,48 @@ html {
   outline: 2px solid #87CEEB;
   outline-offset: 2px;
 }
+
+@theme {
+  /* Colors */
+  --color-brand-sky: #87ceeb;
+  --color-brand-surface: #ffffff;
+  --color-brand-text: #1a1a1a;
+
+  /* Box Shadows */
+  --shadow-nav: 0 2px 20px rgba(0, 0, 0, 0.05);
+  --shadow-nav-strong: 0 2px 30px rgba(0, 0, 0, 0.10);
+  --shadow-card: 0 20px 40px rgba(135, 206, 235, 0.15);
+
+  /* Keyframes */
+  --animate-fade-in-up: fade-in-up 0.8s ease-out both;
+  --animate-fade-in-left: fade-in-left 0.8s ease-out both;
+  --animate-float: float 20s ease-in-out infinite;
+  --animate-bounce-soft: bounceSoft 2s infinite;
+  --animate-slide-down: slideDown 0.5s ease-out;
+
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in-left {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(180deg); }
+  }
+
+  @keyframes bounceSoft {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes slideDown {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}
+

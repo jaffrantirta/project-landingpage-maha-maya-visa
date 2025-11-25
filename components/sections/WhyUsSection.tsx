@@ -48,7 +48,7 @@ export default function WhyUsSection() {
   return (
     <section
       id="why-us"
-      className="bg-linear-to-br from-[#f8fbff] to-white py-24"
+      className="bg-gradient-to-br from-[#f8fbff] to-white py-24"
     >
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="text-center text-3xl font-bold text-brand-text sm:text-4xl lg:text-5xl">

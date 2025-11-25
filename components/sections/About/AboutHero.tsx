@@ -4,7 +4,7 @@ export default function AboutHero() {
   return (
     <section
       id="about-hero"
-      className="bg-linear-to-br from-blue-600 to-blue-400 px-4 py-32 text-center text-white"
+      className="bg-gradient-to-br from-blue-600 to-blue-400 px-4 py-32 text-center text-white"
     >
       <div className="mx-auto max-w-4xl animate-fade-in-up">
         <h1 className="mb-4 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
