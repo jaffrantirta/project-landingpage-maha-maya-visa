@@ -1,4 +1,5 @@
 // components/layout/Footer.tsx
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -25,8 +26,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-3 flex items-center gap-2 text-2xl font-extrabold text-brand-sky">
-              <span>✈️</span>
-              <span>VisaGo</span>
+              <span>
+                <Image src="/logo.png" width={50} height={50} alt="logo" />
+              </span>
+              <span>MAHAMAYA VISA</span>
             </div>
             <p className="text-sm leading-relaxed text-white/70">
               Your trusted partner for seamless visa processing services
@@ -89,17 +92,20 @@ export default function Footer() {
               Contact Info
             </h3>
             <p className="text-sm text-white/80">
-              📍 123 Business Avenue,
+              📍 Jl. Tirtanadi I No.119, Sanur Kauh, Denpasar Selatan, Kota
+              Denpasar
               <br />
-              New York, NY 10001
+              Bali, Indonesia 80228
             </p>
-            <p className="mt-3 text-sm text-white/80">📞 +1 (555) 123-4567</p>
-            <p className="mt-1 text-sm text-white/80">✉️ info@visago.com</p>
+            <p className="mt-3 text-sm text-white/80">📞 +62 813-3967-3719</p>
+            <p className="mt-1 text-sm text-white/80">
+              ✉️ info@MAHAMAYA VISA.com
+            </p>
           </div>
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-4 text-center text-xs text-white/60">
-          © 2024 Visa Agency. All rights reserved.
+          © {new Date().getFullYear()} MAHAMAYA VISA. All rights reserved.
         </div>
       </div>
     </footer>

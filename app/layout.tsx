@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VisaGo - Your Gateway to the World",
+  title: "MAHAMAYA VISA - Your Gateway to the World",
   description:
     "Fast, reliable visa processing services for all your travel needs.",
 };

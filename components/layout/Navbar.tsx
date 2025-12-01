@@ -1,6 +1,7 @@
 // components/layout/Navbar.tsx
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,8 +36,10 @@ export default function Navbar() {
           href="#home"
           className="flex items-center gap-2 text-xl font-extrabold text-brand-sky"
         >
-          <span>✈️</span>
-          <span>VisaGo</span>
+          <span>
+            <Image src="/logo.png" width={50} height={50} alt="logo" />
+          </span>
+          <span>MAHAMAYA VISA</span>
         </Link>
 
         {/* Desktop nav */}

@@ -2,23 +2,16 @@
 
 const cards = [
   {
-    icon: "🔭",
-    title: "Our Vision",
-    description:
-      "To become the world's most trusted and innovative visa processing agency, breaking down barriers and connecting people across borders. We envision a future where international travel is seamless, accessible, and stress-free for everyone.",
-  },
-  {
-    icon: "🎯",
-    title: "Our Mission",
-    description:
-      "To provide fast, reliable, and transparent visa processing services while delivering exceptional customer experiences. We simplify complex visa procedures and offer expert guidance at every step.",
+    icon: "",
+    title: "Our Vision & Mission",
+    description: `Mahamaya Visa's vision and mission are "Partnering with Government, Providing Solutions." With this vision and mission, the company aims to be a partner to the government, providing visa coordination services for international tourists visiting Indonesia. Mahamaya Visa also strives to consistently provide the best solutions and services to its clients.`,
   },
 ];
 
 export default function VisionMission() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20">
-      <div className="grid gap-10 md:grid-cols-2">
+      <div className="grid gap-10 md:grid-cols-1">
         {cards.map((card, index) => (
           <div
             key={card.title}

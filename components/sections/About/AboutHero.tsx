@@ -11,7 +11,7 @@ export default function AboutHero() {
           About Us
         </h1>
         <p className="text-lg opacity-95 sm:text-xl lg:text-2xl">
-          Connecting people across borders with trust, expertise, and dedication
+          People across borders with trust, expertise, and dedication
         </p>
       </div>
     </section>
