@@ -1,6 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "MAHAMAYA VISA - Your Gateway to the World",
@@ -15,6 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Analytics />
       <body className="min-h-screen bg-white text-brand-text antialiased">
         {children}
       </body>
