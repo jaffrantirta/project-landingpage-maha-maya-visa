@@ -1,36 +1,4 @@
-// components/sections/ServicesSection.tsx
-const services = [
-  {
-    icon: "✈️",
-    title: "Tourist Visa",
-    description:
-      "Hassle-free tourist visa processing for your dream vacation destinations worldwide.",
-  },
-  {
-    icon: "💼",
-    title: "Business Visa",
-    description:
-      "Fast-track business visa services to help you expand your global opportunities.",
-  },
-  {
-    icon: "👴👵",
-    title: "Retirement Visa",
-    description:
-      "Prepare for your retirement with our expert guidance on retirement visas.",
-  },
-  {
-    icon: "👨‍👩‍👧",
-    title: "Family Visa",
-    description:
-      "Reunite with your loved ones through our family visa assistance services.",
-  },
-  {
-    icon: "👷",
-    title: "Working Visa",
-    description:
-      "Simplify your work visa application process with our expert guidance and support.",
-  },
-];
+import { pricingData } from "@/services";
 
 export default function ServicesSection() {
   return (
@@ -40,7 +8,7 @@ export default function ServicesSection() {
       </h2>
 
       <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-        {services.map((service, index) => (
+        {pricingData.map((service, index) => (
           <div
             key={service.title}
             className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-8 text-center shadow-sm transition-all duration-200 hover:-translate-y-2 hover:shadow-card"
