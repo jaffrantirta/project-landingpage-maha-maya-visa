@@ -13,16 +13,22 @@ const services = [
       "Fast-track business visa services to help you expand your global opportunities.",
   },
   {
-    icon: "🎓",
-    title: "Student Visa",
+    icon: "👴👵",
+    title: "Retirement Visa",
     description:
-      "Complete support for student visa applications to study abroad programs.",
+      "Prepare for your retirement with our expert guidance on retirement visas.",
   },
   {
     icon: "👨‍👩‍👧",
     title: "Family Visa",
     description:
       "Reunite with your loved ones through our family visa assistance services.",
+  },
+  {
+    icon: "👷",
+    title: "Working Visa",
+    description:
+      "Simplify your work visa application process with our expert guidance and support.",
   },
 ];
 
@@ -33,7 +39,7 @@ export default function ServicesSection() {
         Our Services
       </h2>
 
-      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
         {services.map((service, index) => (
           <div
             key={service.title}

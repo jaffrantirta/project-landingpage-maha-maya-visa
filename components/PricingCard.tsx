@@ -24,11 +24,11 @@ export function PricingCard({
       )}
 
       <h3 className="text-xl font-bold mt-3">{title}</h3>
-      <p className="text-sky-400 text-4xl font-extrabold mt-2">{price}</p>
+      <p className="text-sky-400 text-2xl font-extrabold mt-2">{price}</p>
       <p className="text-gray-500 text-sm">{duration}</p>
 
       <button className="mt-5 w-full bg-sky-400 text-white py-2 rounded-full font-semibold hover:bg-sky-500 transition">
-        Select Plan
+        Apply
       </button>
     </div>
   );

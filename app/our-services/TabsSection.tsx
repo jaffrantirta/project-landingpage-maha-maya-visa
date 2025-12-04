@@ -9,8 +9,9 @@ import { FamilyContent } from "./contents/FamilyContent";
 const tabs = [
   { id: "tourist", label: "Tourist Visa", icon: "✈️" },
   { id: "business", label: "Business Visa", icon: "💼" },
-  { id: "student", label: "Student Visa", icon: "🎓" },
+  { id: "retirement", label: "Retirement Visa", icon: "👴👵" },
   { id: "family", label: "Family Visa", icon: "👨‍👩‍👧" },
+  { id: "working", label: "Working Visa", icon: "👷" },
 ];
 
 export default function TabsSection() {
@@ -42,8 +43,9 @@ export default function TabsSection() {
       <div className="mt-8">
         {active === "tourist" && <TouristContent />}
         {active === "business" && <BusinessContent />}
-        {active === "student" && <StudentContent />}
+        {active === "retirement" && <StudentContent />}
         {active === "family" && <FamilyContent />}
+        {active === "working" && <FamilyContent />}
       </div>
     </>
   );
