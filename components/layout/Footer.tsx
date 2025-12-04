@@ -99,7 +99,7 @@ export default function Footer() {
             </p>
             <p className="mt-3 text-sm text-white/80">📞 +62 813-3967-3719</p>
             <p className="mt-1 text-sm text-white/80">
-              ✉️ info@MAHAMAYA VISA.com
+              ✉️ jinguan99@yahoo.com | druzhwisatamenejemen@gmail.com
             </p>
           </div>
         </div>
