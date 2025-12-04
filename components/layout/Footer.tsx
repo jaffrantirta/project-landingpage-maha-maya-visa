@@ -24,9 +24,9 @@ const socialMedia = [
 const serviceLinks = [
   "Tourist Visa",
   "Business Visa",
-  "Student Visa",
+  "Retirement Visa",
   "Family Visa",
-  "Visa Consultation",
+  "Working Visa",
 ];
 
 export default function Footer() {
@@ -123,18 +123,18 @@ export default function Footer() {
             </p>
             <p>
               <a
-                href="mailto:druzhwisatamenejemen@gmail.com"
-                className="mt-1 text-sm text-white/80 hover:underline"
-              >
-                ✉️ druzhwisatamenejemen@gmail.com
-              </a>
-            </p>
-            <p>
-              <a
                 href="mailto:jinguan99@yahoo.com"
                 className="mt-1 text-sm text-white/80 hover:underline"
               >
                 ✉️ jinguan99@yahoo.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="mailto:druzhwisatamenejemen@gmail.com"
+                className="mt-1 text-sm text-white/80 hover:underline"
+              >
+                ✉️ druzhwisatamenejemen@gmail.com
               </a>
             </p>
           </div>

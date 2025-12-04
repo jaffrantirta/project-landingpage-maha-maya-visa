@@ -10,7 +10,7 @@ export default function PartnersSection() {
   return (
     <section id="partners" className="mx-auto max-w-6xl px-4 py-24 text-center">
       <h2 className="text-3xl font-bold text-brand-text sm:text-4xl lg:text-5xl">
-        Trusted Partners
+        Our Partners
       </h2>
 
       <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-2 h-full">

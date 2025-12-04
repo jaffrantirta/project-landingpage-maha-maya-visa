@@ -10,9 +10,6 @@ export default function AboutHero() {
         <h1 className="mb-4 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
           About Us
         </h1>
-        <p className="text-lg opacity-95 sm:text-xl lg:text-2xl">
-          People across borders with trust, expertise, and dedication
-        </p>
       </div>
     </section>
   );

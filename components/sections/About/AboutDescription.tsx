@@ -4,10 +4,6 @@ export default function AboutDescription() {
   return (
     <section className="-mt-16 px-4 pb-12">
       <div className="mx-auto max-w-5xl rounded-3xl bg-white p-10 shadow-xl animate-fade-in-up sm:p-14">
-        <h2 className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-4xl">
-          Visa Partner Since 2010
-        </h2>
-
         <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed text-gray-600 sm:text-xl">
           Mahamaya Visa is a company operating in the tourism sector,
           particularly on the island of Bali. Currently, Mahamaya Visa focuses

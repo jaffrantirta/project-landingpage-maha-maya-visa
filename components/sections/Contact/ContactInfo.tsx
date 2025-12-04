@@ -7,7 +7,7 @@ export default function ContactInfo() {
         <span className="text-3xl"></span> Contact Information
       </h2>
 
-      <div className="space-y-5">
+      <div className="grid grid-cols-1 gap-4">
         {/* Address */}
         <div className="flex gap-4 rounded-xl bg-gray-50 p-4 transition hover:bg-blue-50 hover:translate-x-1">
           <div className="flex h-12 w-12 aspect-square items-center justify-center rounded-xl bg-blue-600 text-white text-xl">
@@ -28,10 +28,10 @@ export default function ContactInfo() {
             📧
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Email Address 1</h3>
+            <h3 className="font-semibold text-gray-900">Email Address 2</h3>
             <p className="text-gray-600">
-              <span className="font-semibold text-blue-600">
-                druzhwisatamenejemen@gmail.com
+              <span className="font-semibold text-xs md:text-sm text-blue-600">
+                jinguan99@yahoo.com
               </span>
             </p>
           </div>
@@ -41,10 +41,10 @@ export default function ContactInfo() {
             📧
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Email Address 2</h3>
+            <h3 className="font-semibold text-gray-900">Email Address 1</h3>
             <p className="text-gray-600">
-              <span className="font-semibold text-blue-600">
-                jinguan99@yahoo.com
+              <span className="font-semibold text-xs md:text-sm text-blue-600">
+                druzhwisatamenejemen@gmail.com
               </span>
             </p>
           </div>
