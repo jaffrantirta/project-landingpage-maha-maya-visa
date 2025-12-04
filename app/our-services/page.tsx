@@ -10,7 +10,7 @@ export default function OurServicesPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-400 to-sky-100 py-24 px-6 text-center">
+      <section className="text-center bg-[url('/assets/about.jpg')] bg-cover bg-center bg-no-repeat px-4 py-32">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
             Our Services

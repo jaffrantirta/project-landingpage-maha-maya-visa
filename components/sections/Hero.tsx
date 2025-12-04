@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-gradient-to-br from-brand-sky to-[#E0F6FF] px-4 py-16"
+      className="relative flex min-h-[90vh] items-center justify-center overflow-hidden md:bg-[url('/assets/hero.jpg')] bg-[url('/assets/hero_mobile.jpg')] bg-cover bg-center bg-no-repeat px-4 py-16"
     >
       {/* Floating shapes */}
       <div className="pointer-events-none absolute left-[10%] top-[15%] h-72 w-72 rounded-full bg-white/10 blur-2xl animate-float" />
@@ -14,10 +14,10 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl text-center text-white animate-fade-in-up">
         <h1 className="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-          Your Gateway to the World
+          Your Gateway to the Island of the Gods
         </h1>
         <p className="mb-8 text-lg opacity-95 sm:text-xl">
-          Fast, reliable visa processing services for all your travel needs.
+          Professional and reliable visa processing services for all your needs.
         </p>
         <Link
           href="#services"

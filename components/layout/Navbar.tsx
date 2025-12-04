@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link
-          href="#home"
+          href="/"
           className="flex items-center gap-2 text-xl font-extrabold text-brand-sky"
         >
           <span>
