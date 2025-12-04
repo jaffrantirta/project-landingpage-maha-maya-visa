@@ -1,4 +1,5 @@
 // components/sections/Hero.tsx
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -13,6 +14,23 @@ export default function Hero() {
       <div className="pointer-events-none absolute left-[65%] top-[55%] h-40 w-40 rounded-full bg-white/10 blur-xl animate-float" />
 
       <div className="relative z-10 max-w-3xl text-center text-white animate-fade-in-up">
+        <div className="mx-auto mb-6 w-52 rounded-full px-10 flex items-center justify-center">
+          <Image
+            src="/logo.png"
+            width={100}
+            height={100}
+            alt="logo"
+            className="w-full"
+          />
+        </div>
+        <h1 className="mb-4 text-2xl font-extrabold leading-tight">
+          MAHAMAYA VISA
+        </h1>
+
+        <div className="dev-divider mt-8 mb-12">
+          <div className="w-1/2 h-1 bg-brand-sky mx-auto" />
+        </div>
+
         <h1 className="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
           Your Gateway to the Island of the Gods
         </h1>

@@ -10,6 +10,17 @@ const quickLinks = [
   { label: "Contact", href: "#contact" }, // you can add a real contact section later
 ];
 
+const socialMedia = [
+  {
+    icon: "/assets/icons/instagram.png",
+    link: "https://instagram.com/mahamayavisa",
+  },
+  {
+    icon: "/assets/icons/facebook.png",
+    link: "https://www.facebook.com/mahamayavisaextension",
+  },
+];
+
 const serviceLinks = [
   "Tourist Visa",
   "Business Visa",
@@ -25,25 +36,25 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="mb-3 flex items-center gap-2 text-2xl font-extrabold text-brand-sky">
+            <div className="mb-3 flex items-center gap-2 text-xl font-extrabold text-brand-sky">
               <span>
                 <Image src="/logo.png" width={50} height={50} alt="logo" />
               </span>
               <span>MAHAMAYA VISA</span>
             </div>
             <p className="text-sm leading-relaxed text-white/70">
-              Your trusted partner for seamless visa processing services
-              worldwide. We make your travel dreams a reality.
+              Your trusted partner for seamless visa processing services.
             </p>
             <div className="mt-4 flex gap-3">
-              {["📘", "🐦", "📷", "💼"].map((icon, idx) => (
-                <button
-                  key={idx}
+              {socialMedia.map((icon, link) => (
+                <a
+                  href={icon.link}
+                  key={link}
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-lg text-brand-sky transition-all hover:-translate-y-0.5 hover:bg-brand-sky hover:text-brand-text"
                   aria-label="Social link"
                 >
-                  {icon}
-                </button>
+                  <Image src={icon.icon} width={20} height={20} alt="icon" />
+                </a>
               ))}
             </div>
           </div>
@@ -91,15 +102,40 @@ export default function Footer() {
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand-sky">
               Contact Info
             </h3>
-            <p className="text-sm text-white/80">
-              📍 Jl. Tirtanadi I No.119, Sanur Kauh, Denpasar Selatan, Kota
-              Denpasar
-              <br />
-              Bali, Indonesia 80228
+            <p>
+              <a
+                href="https://maps.app.goo.gl/RoSpkx5aXYPkTmSz7?g_st=ic"
+                className="text-sm text-white/80 hover:underline"
+              >
+                📍 Jl. Tirtanadi I No.119, Sanur Kauh, Denpasar Selatan, Kota
+                Denpasar
+                <br />
+                Bali, Indonesia 80228
+              </a>
             </p>
-            <p className="mt-3 text-sm text-white/80">📞 +62 813-3967-3719</p>
-            <p className="mt-1 text-sm text-white/80">
-              ✉️ jinguan99@yahoo.com | druzhwisatamenejemen@gmail.com
+            <p>
+              <a
+                href="https://wa.me/6281339673719"
+                className="mt-3 text-sm text-white/80 hover:underline"
+              >
+                📞 +62 813-3967-3719
+              </a>
+            </p>
+            <p>
+              <a
+                href="mailto:druzhwisatamenejemen@gmail.com"
+                className="mt-1 text-sm text-white/80 hover:underline"
+              >
+                ✉️ druzhwisatamenejemen@gmail.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="mailto:jinguan99@yahoo.com"
+                className="mt-1 text-sm text-white/80 hover:underline"
+              >
+                ✉️ jinguan99@yahoo.com
+              </a>
             </p>
           </div>
         </div>

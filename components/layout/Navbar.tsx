@@ -39,7 +39,14 @@ export default function Navbar() {
           <span>
             <Image src="/logo.png" width={50} height={50} alt="logo" />
           </span>
-          <span>MAHAMAYA VISA</span>
+
+          <span
+            className={`transition-opacity duration-300 ${
+              isScrolled ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            MAHAMAYA VISA
+          </span>
         </Link>
 
         {/* Desktop nav */}
