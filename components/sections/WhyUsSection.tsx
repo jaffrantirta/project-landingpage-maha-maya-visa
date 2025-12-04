@@ -9,14 +9,12 @@ const features: Feature[] = [
   {
     icon: "⚡",
     title: "Fast Processing",
-    description:
-      "We prioritize speed without compromising accuracy, getting your visa approved quickly.",
+    description: "We prioritize speed without compromising accuracy.",
   },
   {
     icon: "🛡️",
     title: "100% Secure",
-    description:
-      "Your personal information and documents are protected with bank-level security.",
+    description: "Your personal information and documents are protected.",
   },
   {
     icon: "🌟",
@@ -25,22 +23,10 @@ const features: Feature[] = [
       "Our experienced team provides personalized guidance throughout the entire process.",
   },
   {
-    icon: "💯",
-    title: "High Success Rate",
-    description:
-      "95% visa approval rate thanks to our thorough application review process.",
-  },
-  {
     icon: "💰",
-    title: "Transparent Pricing",
+    title: "Flexible Payment",
     description:
-      "No hidden fees. Clear pricing structure with all costs disclosed upfront.",
-  },
-  {
-    icon: "🌍",
-    title: "Global Coverage",
-    description:
-      "We process visas for over 150 countries across all continents.",
+      "Pay in full upfront, partially or pay after the process is completed.",
   },
 ];
 
