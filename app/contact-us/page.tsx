@@ -10,7 +10,7 @@ export default function ContactPage() {
     <div className="relative">
       <Navbar />
 
-      <main className="pt-20">
+      <main className="">
         <ContactHero />
 
         <div className="mx-auto max-w-6xl px-4 -mt-16 pb-16 space-y-12">

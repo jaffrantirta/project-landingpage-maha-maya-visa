@@ -9,7 +9,7 @@ export default function AboutPage() {
     <div className="relative">
       <Navbar />
 
-      <main className="pt-20">
+      <main className="">
         <AboutHero />
         <AboutDescription />
         <VisionMission />

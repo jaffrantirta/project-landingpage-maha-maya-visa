@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="relative">
       <Navbar />
-      <main className="pt-20">
+      <main className="">
         <Hero />
         <ServicesSection />
         <WhyUsSection />
