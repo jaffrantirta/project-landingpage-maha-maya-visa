@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "MAHAMAYA VISA - Your Gateway to the World",
+  title: "MAHAMAYA VISA - Your Gateway to the Island of the Gods",
   description:
     "Fast, reliable visa processing services for all your travel needs.",
 };

@@ -7,7 +7,7 @@ export default function ServicesSection() {
         Our Services
       </h2>
 
-      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {pricingData.map((service, index) => (
           <div
             key={service.title}

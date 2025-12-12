@@ -3,6 +3,7 @@ type Feature = {
   icon: string;
   title: string;
   description: string;
+  additionalInfo?: string;
 };
 
 const features: Feature[] = [
@@ -27,6 +28,19 @@ const features: Feature[] = [
     title: "Flexible Payment",
     description:
       "Pay in full upfront, partially or pay after the process is completed.",
+  },
+  {
+    icon: "🗨️",
+    title: "Free Consultation",
+    description:
+      "We offer free consultations to help you understand the process and requirements.",
+  },
+  {
+    icon: "🛵",
+    title: "Free Pickup and Delivery Documents",
+    description:
+      "We offer free pickup and delivery services for your documents.",
+    additionalInfo: "(Denpasar, Canggu, Kuta and Ubud)",
   },
 ];
 
@@ -56,6 +70,9 @@ export default function WhyUsSection() {
                   {feature.title}
                 </h3>
                 <p className="text-sm text-slate-600">{feature.description}</p>
+                <p className="text-xs text-slate-500 italic">
+                  {feature.additionalInfo}
+                </p>
               </div>
             </div>
           ))}

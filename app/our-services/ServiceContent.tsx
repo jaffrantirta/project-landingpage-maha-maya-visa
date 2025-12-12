@@ -8,13 +8,12 @@ export function ServiceContent({ data }: any) {
         <h2 className="text-2xl font-bold flex items-center gap-3">
           <span className="text-5xl">{data.icon}</span> {data.title}
         </h2>
-
         <p className="text-gray-600 leading-relaxed">{data.description}</p>
-
         {data.requiredDocuments.map((doc: any, i: number) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold mb-2">{doc.title}</h3>
-            <ul className="text-gray-600 list-disc ml-5 space-y-1">
+            <h3 className="text-lg font-semibold">{doc.title}</h3>
+            <span className="text-sm">{doc.subtitle}</span>
+            <ul className="text-gray-600 list-disc ml-5 mt-5 space-y-1">
               {doc.list.map((item: string, idx: number) => (
                 <li key={idx}>{item}</li>
               ))}
@@ -31,6 +30,7 @@ export function ServiceContent({ data }: any) {
             title={item.title}
             price={item.price}
             duration={item.duration}
+            subtitle={item.subtitle}
           />
         ))}
       </div>

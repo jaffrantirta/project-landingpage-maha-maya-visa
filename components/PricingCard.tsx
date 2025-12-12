@@ -1,12 +1,16 @@
+import { AlertCircle } from "lucide-react";
+
 export function PricingCard({
   title,
   price,
   duration,
+  subtitle,
   featured,
 }: {
   title: string;
   price: string;
   duration: string;
+  subtitle?: string;
   featured?: boolean;
 }) {
   const phoneNumber = "6281339673719";
@@ -20,6 +24,8 @@ export function PricingCard({
       "_blank"
     );
   };
+
+  console.log("subtitle", subtitle);
 
   return (
     <div
@@ -38,6 +44,13 @@ export function PricingCard({
       <h3 className="text-xl font-bold mt-3">{title}</h3>
       <p className="text-sky-400 text-2xl font-extrabold mt-2">{price}</p>
       <p className="text-gray-500 text-sm">{duration}</p>
+
+      {subtitle && (
+        <div className="mt-2 flex items-center gap-1 text-xs text-slate-400">
+          <AlertCircle className="h-3.5 w-3.5" />
+          <span>{subtitle}</span>
+        </div>
+      )}
 
       <button
         onClick={handleApplyClick}
