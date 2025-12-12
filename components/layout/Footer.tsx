@@ -1,13 +1,13 @@
 // components/layout/Footer.tsx
+import { pricingData } from "@/services";
 import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#why-us" },
-  { label: "Partners", href: "#partners" },
-  { label: "Contact", href: "#contact" }, // you can add a real contact section later
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/our-services" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact", href: "/contact-us" },
 ];
 
 const socialMedia = [
@@ -22,8 +22,8 @@ const socialMedia = [
 ];
 
 const serviceLinks = [
-  "Tourist Visa",
-  "Business Visa",
+  "Tourist",
+  "Business",
   "Retirement Visa",
   "Family Visa",
   "Working Visa",
@@ -84,13 +84,13 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2 text-sm text-white/80">
-              {serviceLinks.map((item) => (
-                <li key={item}>
+              {pricingData.map((item: any) => (
+                <li key={item.id}>
                   <Link
-                    href="#services"
+                    href={"/our-services#" + item.id}
                     className="inline-block transition-transform hover:translate-x-1 hover:text-brand-sky"
                   >
-                    {item}
+                    {item.title}
                   </Link>
                 </li>
               ))}
