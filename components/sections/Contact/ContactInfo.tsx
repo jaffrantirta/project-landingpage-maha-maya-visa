@@ -28,7 +28,7 @@ export default function ContactInfo() {
             📧
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Email Address 2</h3>
+            <h3 className="font-semibold text-gray-900">Email Address 1</h3>
             <p className="text-gray-600">
               <span className="font-semibold text-xs md:text-sm text-blue-600">
                 jinguan99@yahoo.com
@@ -41,7 +41,7 @@ export default function ContactInfo() {
             📧
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Email Address 1</h3>
+            <h3 className="font-semibold text-gray-900">Email Address 2</h3>
             <p className="text-gray-600">
               <span className="font-semibold text-xs md:text-sm text-blue-600">
                 druzhwisatamenejemen@gmail.com
