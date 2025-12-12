@@ -183,27 +183,24 @@ export const pricingData = [
     title: "Working Visa Services",
     description:
       "Work legally in Indonesia with a registered employer. Our team manages RPTKA, Notification, and IMTA procedures.",
-    requiredDocuments: [
-      {
-        title: "Requirements",
-        list: [
-          "Employment contract",
-          "Employer company documents",
-          "Passport (6+ months validity)",
-        ],
-      },
-    ],
+    requiredDocuments: [],
     priceList: [
       {
-        title: "Working Visa KITAS (1 Year)",
-        price: "IDR 18.000.000",
-        duration: "4–6 weeks",
+        title: "Working Visa KITAS (Offshore)",
+        price: "IDR 18.000.000 + USD",
+        duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
-        title: "Working Visa KITAS Renewal",
-        price: "IDR 16.000.000",
-        duration: "4–6 weeks",
+        title: "Working Visa KITAS Renewal - for KITAS Holder",
+        price: "IDR 13.000.000 + USD",
+        duration: "7-14 working days after biometric & interview",
+        subtitle: "Alternative option available",
+      },
+      {
+        title: "Remote Worker KITAS E33G",
+        price: "IDR 11.000.000",
+        duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
     ],
@@ -216,27 +213,24 @@ export const pricingData = [
     title: "Family Visa Services",
     description:
       "Designed for spouses and children of Indonesian citizens or KITAS holders.",
-    requiredDocuments: [
-      {
-        title: "Requirements",
-        list: [
-          "Marriage/Birth certificate",
-          "Passport (6+ months validity)",
-          "Proof of residence",
-        ],
-      },
-    ],
+    requiredDocuments: [],
     priceList: [
       {
         title: "Family KITAS (1 Year)",
-        price: "IDR 12.000.000",
-        duration: "3–4 weeks",
+        price: "IDR 10.000.000",
+        duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
-        title: "Family KITAS Renewal",
-        price: "IDR 10.000.000",
-        duration: "3–4 weeks",
+        title: "Family KITAS (2 Years)",
+        price: "IDR 15.000.000",
+        duration: "7-14 working days",
+        subtitle: "Alternative option available",
+      },
+      {
+        title: "Family KITAS Renewal - for KITAS Holder",
+        price: "IDR 9.000.000",
+        duration: "7-14 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
     ],
@@ -251,26 +245,35 @@ export const pricingData = [
       "For foreign retirees who want to live comfortably in Indonesia long-term.",
     requiredDocuments: [
       {
-        title: "Requirements",
+        title: "Description and Requirements for E33F",
+        subtitle:
+          "A temporary visa to enter Indonesia, allowing you to enter and exit Indonesia within a certain period. The visa can be extended and converted into another type of stay permit.",
         list: [
-          "Age 55+",
-          "Proof of monthly income/pension ≥ USD 1500",
-          "Health & life insurance",
+          "Proof of valid passport with at least 6 months validity",
+          "Proof of life & health insurance",
           "Rental agreement",
+          "Bank statement showing a balance of at least USD $2000 in the last 3 months",
+          "Recent color photograph",
+          "Travel itinerary",
         ],
       },
     ],
     priceList: [
       {
-        title: "Retirement Visa KITAS (1 Year)",
-        price: "IDR 15.000.000",
-        duration: "3–4 weeks",
+        title: "Retirement Visa KITAS (1 Year) Offshore",
+        price: "IDR 13.000.000",
+        duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
-        title: "Retirement Visa Renewal",
-        price: "IDR 14.000.000",
-        duration: "3–4 weeks",
+        title: "Bridging and Convert to Retirement KITAS Onshore",
+        price: "IDR 2.500.000 + IDR 13.000.000",
+        duration: "7-14 working days",
+        subtitle: "Alternative option available",
+      },
+      {
+        title: "Retirement Stay Permit Renewal - for KITAS Holder",
+        duration: "7-14 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
     ],
