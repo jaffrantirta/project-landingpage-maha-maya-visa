@@ -2,13 +2,11 @@ import { AlertCircle } from "lucide-react";
 
 export function PricingCard({
   title,
-  price,
   duration,
   subtitle,
   featured,
 }: {
   title: string;
-  price: string;
   duration: string;
   subtitle?: string;
   featured?: boolean;
@@ -42,7 +40,6 @@ export function PricingCard({
       )}
 
       <h3 className="text-xl font-bold mt-3">{title}</h3>
-      <p className="text-sky-400 text-2xl font-extrabold mt-2">{price}</p>
       <p className="text-gray-500 text-sm">{duration}</p>
 
       {subtitle && (

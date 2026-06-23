@@ -31,37 +31,31 @@ export const pricingData = [
     priceList: [
       {
         title: "Standard - C1 Visa Single Entry",
-        price: "IDR 2.700.000",
-        duration: "7–10 working days",
+duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension  - C1 Visa (60 days)",
-        price: "IDR 2.000.000",
         duration: "2–4 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D1 Visa Multiple Entry (1 Year)",
-        price: "IDR 5.500.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D1 Visa (60 days) Max. 2 times",
-        price: "IDR 2.000.000/extension",
         duration: "3–5 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D1 Visa Multiple Entry (2 Year)",
-        price: "IDR 9.000.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D1 Visa (60 days) Max. 2 times",
-        price: "IDR 2.000.000/extension",
         duration: "3–5 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
@@ -115,61 +109,51 @@ export const pricingData = [
     priceList: [
       {
         title: "Standard - C2 Visa Single Entry",
-        price: "IDR 3.500.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension  - C2 Visa (60 days)",
-        price: "IDR 2.000.000",
         duration: "2–4 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D2 Visa Multiple Entry (1 Year)",
-        price: "IDR 6.500.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D2 Visa (60 days) Max. 2 times",
-        price: "IDR 2.000.000/extension",
         duration: "3–5 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D2 Visa Multiple Entry (2 Year)",
-        price: "IDR 10.000.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D2 Visa (60 days) Max. 2 times",
-        price: "IDR 2.000.000/extension",
         duration: "3–5 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D12 Pre-Investment Visa (1 Year)",
-        price: "IDR 7.500.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D12 Pre-Investment Visa (6 Months) Max. 1 time",
-        price: "IDR 5.000.000",
         duration: "3–5 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - D12 Pre-Investment Visa (2 Years)",
-        price: "IDR 13.000.000",
         duration: "7–10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - D12 Pre-Investment Visa (6 Months) Max. 1 time",
-        price: "IDR 5.000.000",
         duration: "3–5 working days",
         subtitle: "Alternative option available",
       },
@@ -187,19 +171,16 @@ export const pricingData = [
     priceList: [
       {
         title: "Working Visa KITAS (Offshore)",
-        price: "IDR 18.000.000 + USD",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Working Visa KITAS Renewal - for KITAS Holder",
-        price: "IDR 13.000.000 + USD",
         duration: "7-14 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Remote Worker KITAS E33G",
-        price: "IDR 11.000.000",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
@@ -217,19 +198,16 @@ export const pricingData = [
     priceList: [
       {
         title: "Family KITAS (1 Year)",
-        price: "IDR 10.000.000",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Family KITAS (2 Years)",
-        price: "IDR 15.000.000",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Family KITAS Renewal - for KITAS Holder",
-        price: "IDR 9.000.000",
         duration: "7-14 working days after biometric & interview",
         subtitle: "Alternative option available",
       },
@@ -261,13 +239,11 @@ export const pricingData = [
     priceList: [
       {
         title: "Retirement Visa KITAS (1 Year) Offshore",
-        price: "IDR 13.000.000",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Bridging and Convert to Retirement KITAS Onshore",
-        price: "IDR 2.500.000 + IDR 13.000.000",
         duration: "7-14 working days",
         subtitle: "Alternative option available",
       },
@@ -323,43 +299,36 @@ export const pricingData = [
     priceList: [
       {
         title: "Standard - C6 Volunteer Visa Single Entry",
-        price: "IDR 4.000.000",
         duration: "7-10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - C6 Volunteer Visa (60 days)",
-        price: "IDR 2.000.000",
         duration: "3–4 woring days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - C10 Event Invitation Visa Single Entry",
-        price: "IDR 4.000.000",
         duration: "7-10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - C10 Event Invitation Visa (60 days)",
-        price: "IDR 2.000.000",
         duration: "3–4 woring days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - C22A Internship Visa Single Entry (60 days)",
-        price: "IDR 5.000.000",
         duration: "7-10 working days",
         subtitle: "Alternative option available",
       },
       {
         title: "Extension - C22A Internship Visa (60 days)",
-        price: "IDR 2.000.000",
         duration: "3–4 woring days after biometric & interview",
         subtitle: "Alternative option available",
       },
       {
         title: "Standard - C22A Internship Visa Single Entry (6 Months)",
-        price: "IDR 6.000.000",
         duration: "7-10 working days",
         subtitle: "Alternative option available",
       },

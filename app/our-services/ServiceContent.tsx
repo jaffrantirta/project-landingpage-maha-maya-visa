@@ -28,7 +28,6 @@ export function ServiceContent({ data }: any) {
           <PricingCard
             key={i}
             title={item.title}
-            price={item.price}
             duration={item.duration}
             subtitle={item.subtitle}
           />
