@@ -2,7 +2,7 @@ export const pricingData = [
   {
     id: "tourist",
     tabTitle: "Tourist Visa",
-    icon: "✈️",
+    icon: "tourist",
     title: "Tourist Visa Services",
     description: "Enjoy your holiday in Indonesia with ease.",
     requiredDocuments: [
@@ -65,7 +65,7 @@ duration: "7–10 working days",
   {
     id: "business",
     tabTitle: "Business Visa",
-    icon: "💼",
+    icon: "business",
     title: "Business Visa Services",
     description:
       "For clients traveling to Indonesia for meetings, conventions, or commercial transactions.",
@@ -163,7 +163,7 @@ duration: "7–10 working days",
   {
     id: "working",
     tabTitle: "Working Visa",
-    icon: "👷",
+    icon: "working",
     title: "Working Visa Services",
     description:
       "Work legally in Indonesia with a registered employer. Our team manages RPTKA, Notification, and IMTA procedures.",
@@ -190,7 +190,7 @@ duration: "7–10 working days",
   {
     id: "family",
     tabTitle: "Family Visa",
-    icon: "👨‍👩‍👧",
+    icon: "family",
     title: "Family Visa Services",
     description:
       "Designed for spouses and children of Indonesian citizens or KITAS holders.",
@@ -217,7 +217,7 @@ duration: "7–10 working days",
   {
     id: "retirement",
     tabTitle: "Retirement Visa",
-    icon: "👴👵",
+    icon: "retirement",
     title: "Retirement Visa Services",
     description:
       "For foreign retirees who want to live comfortably in Indonesia long-term.",
@@ -257,7 +257,7 @@ duration: "7–10 working days",
   {
     id: "others",
     tabTitle: "Others Visa",
-    icon: "📄",
+    icon: "others",
     title: "Others Visa Services",
     description: "For foreign nationals who need visas for various reasons.",
     requiredDocuments: [

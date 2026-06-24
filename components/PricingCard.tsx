@@ -1,59 +1,46 @@
-import { AlertCircle } from "lucide-react";
+"use client";
+
+import { Clock, Info } from "lucide-react";
 
 export function PricingCard({
   title,
   duration,
   subtitle,
-  featured,
 }: {
   title: string;
   duration: string;
   subtitle?: string;
-  featured?: boolean;
 }) {
   const phoneNumber = "6281339673719";
   const encodedMessage = encodeURIComponent(
-    `Hello, I am interested in applying for the ${title} service. Could you please provide me with further information?`
+    `Hello, I am interested in the ${title} service. Could you please provide more information?`
   );
 
-  const handleApplyClick = () => {
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
+  const handleApply = () => {
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
-  console.log("subtitle", subtitle);
-
   return (
-    <div
-      className={`p-6 rounded-2xl border transition ${
-        featured
-          ? "border-sky-400 bg-sky-50 shadow-lg"
-          : "border-gray-200 bg-white hover:border-sky-400"
-      }`}
-    >
-      {featured && (
-        <span className="text-xs font-bold bg-sky-400 text-white px-3 py-1 rounded-full">
-          Most Popular
-        </span>
-      )}
+    <div className="rounded-xl border border-slate-200 bg-white p-5 transition-all hover:border-brand-sky hover:shadow-card">
+      <h4 className="font-semibold text-brand-text leading-snug">{title}</h4>
 
-      <h3 className="text-xl font-bold mt-3">{title}</h3>
-      <p className="text-gray-500 text-sm">{duration}</p>
+      <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
+        <Clock className="h-3.5 w-3.5 shrink-0 text-brand-sky" />
+        <span>{duration}</span>
+      </div>
 
       {subtitle && (
-        <div className="mt-2 flex items-center gap-1 text-xs text-slate-400">
-          <AlertCircle className="h-3.5 w-3.5" />
+        <div className="mt-1.5 flex items-center gap-1.5 text-xs text-slate-400">
+          <Info className="h-3 w-3 shrink-0" />
           <span>{subtitle}</span>
         </div>
       )}
 
       <button
-        onClick={handleApplyClick}
-        className="mt-5 w-full hover:shadow-card hover:cursor-pointer hover:scale-105 bg-sky-400 text-white py-2 rounded-full font-semibold hover:bg-sky-500 transition"
+        onClick={handleApply}
+        className="mt-4 w-full cursor-pointer rounded-lg bg-brand-sky py-2.5 text-sm font-semibold text-brand-text transition-all hover:bg-sky-300"
       >
-        Apply
+        Apply via WhatsApp
       </button>
     </div>
   );

@@ -1,81 +1,93 @@
-// components/sections/WhyUsSection.tsx
+import {
+  BoltIcon,
+  ShieldCheckIcon,
+  AcademicCapIcon,
+  BanknotesIcon,
+  ChatBubbleLeftRightIcon,
+  TruckIcon,
+} from "@heroicons/react/24/outline";
+
 type Feature = {
-  icon: string;
+  icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
-  additionalInfo?: string;
+  note?: string;
 };
 
 const features: Feature[] = [
   {
-    icon: "⚡",
+    icon: BoltIcon,
     title: "Fast Processing",
     description: "We prioritize speed without compromising accuracy.",
   },
   {
-    icon: "🛡️",
+    icon: ShieldCheckIcon,
     title: "100% Secure",
-    description: "Your personal information and documents are protected.",
+    description: "Your documents and personal data are fully protected.",
   },
   {
-    icon: "🌟",
+    icon: AcademicCapIcon,
     title: "Expert Support",
-    description:
-      "Our experienced team provides personalized guidance throughout the entire process.",
+    description: "Personalized guidance from our experienced team throughout the process.",
   },
   {
-    icon: "💰",
+    icon: BanknotesIcon,
     title: "Flexible Payment",
-    description:
-      "Pay in full upfront, partially or pay after the process is completed.",
+    description: "Pay in full, partially, or after the process is completed.",
   },
   {
-    icon: "🗨️",
+    icon: ChatBubbleLeftRightIcon,
     title: "Free Consultation",
-    description:
-      "We offer free consultations to help you understand the process and requirements.",
+    description: "No-cost consultations to clarify process and requirements.",
   },
   {
-    icon: "🛵",
-    title: "Free Pickup and Delivery Documents",
-    description:
-      "We offer free pickup and delivery services for your documents.",
-    additionalInfo: "(Denpasar, Canggu, Kuta and Ubud)",
+    icon: TruckIcon,
+    title: "Free Pickup & Delivery",
+    description: "We collect and return your documents at no extra cost.",
+    note: "Denpasar · Canggu · Kuta · Ubud",
   },
 ];
 
 export default function WhyUsSection() {
   return (
-    <section
-      id="why-us"
-      className="bg-gradient-to-br from-[#f8fbff] to-white py-24"
-    >
-      <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-center text-3xl font-bold text-brand-text sm:text-4xl lg:text-5xl">
-          Why Choose Us
-        </h2>
+    <section id="why-us" className="bg-slate-50 py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
+          {/* Left: sticky heading */}
+          <div className="lg:sticky lg:top-8 lg:self-start">
+            <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-sky">
+              Why Choose Us
+            </p>
+            <h2 className="text-3xl font-bold text-brand-text sm:text-4xl">
+              Everything you need, handled.
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-slate-500">
+              We&apos;ve helped hundreds of clients navigate Indonesia&apos;s visa system with confidence.
+            </p>
+            <div className="mt-8 h-px w-10 bg-brand-sky" />
+          </div>
 
-        <div className="mt-12 grid gap-10 md:grid-cols-2">
-          {features.map((feature, index) => (
-            <div
-              key={feature.title}
-              className="flex gap-4 animate-fade-in-left"
-              style={{ animationDelay: `${0.1 * (index + 1)}s` }}
-            >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-sky text-2xl text-white transition-transform duration-200 hover:scale-110 hover:rotate-3">
-                {feature.icon}
-              </div>
-              <div>
-                <h3 className="mb-1 text-lg font-semibold text-brand-text">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-slate-600">{feature.description}</p>
-                <p className="text-xs text-slate-500 italic">
-                  {feature.additionalInfo}
-                </p>
-              </div>
-            </div>
-          ))}
+          {/* Right: feature grid */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {features.map((feature) => {
+              const Icon = feature.icon;
+              return (
+                <div
+                  key={feature.title}
+                  className="rounded-2xl border border-slate-200 bg-white p-5"
+                >
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-sky/15">
+                    <Icon className="h-5 w-5 text-brand-text" />
+                  </div>
+                  <h3 className="mb-1 font-semibold text-brand-text">{feature.title}</h3>
+                  <p className="text-sm text-slate-500 leading-relaxed">{feature.description}</p>
+                  {feature.note && (
+                    <p className="mt-1.5 text-xs text-slate-400 italic">{feature.note}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
